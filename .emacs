@@ -9,6 +9,9 @@
 ;; ace-jump-mode
 ;; openwith
 
+;; to save sessions
+(desktop-save-mode 1)
+
 ;; to select word/line/blosck in increasing order
 (defun semnav-up (arg)
   (interactive "p")
