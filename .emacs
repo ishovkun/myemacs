@@ -270,9 +270,6 @@ point reaches the beginning or end of the buffer, stop there."
  python-shell-interpreter-args "--profile=dev"
  )
 
-;; to make python output faster
-(setq python-shell-enable-font-lock nil)
-
 ;; (setq-default py-which-bufname "IPython")
 (setq-default python-shell-interpreter-interactive-arg t)
 ; use the wx backend, for both mayavi and matplotlib
@@ -375,10 +372,14 @@ point reaches the beginning or end of the buffer, stop there."
       (cons '("SConstruct" . python) auto-mode-alist))
 
 ;; set font size before the color sheme
-(set-face-attribute 'default nil :height 120)
+
 (if (eq system-type 'windows-nt)
-    (set-face-attribute 'default nil :family "Consolas")
-  )
+    (
+     (set-face-attribute 'default nil :family "Consolas")
+     (set-face-attribute 'default nil :height 120)
+     )
+  (set-face-attribute 'default nil :height 110)
+     )
 
 ;; lose the UI
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
