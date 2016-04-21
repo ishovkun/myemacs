@@ -285,6 +285,9 @@ point reaches the beginning or end of the buffer, stop there."
   (lambda ()
     (setq imenu-create-index-function 'python-imenu-create-index)))
 
+;; optimize python shell ouput speed
+(setq python-shell-enable-font-lock nil)
+
 ; switch to the interpreter after executing code
 (setq py-shell-switch-buffers-on-execute-p t)
 (setq py-switch-buffers-on-execute-p t)
