@@ -119,6 +119,14 @@ Subsequent calls expands the selection to larger semantic unit."
 (global-set-key (kbd "M-<up>") 'move-line-up)
 (global-set-key (kbd "M-<down>") 'move-line-down)
 
+(defun next-word (p)
+   "Move point to the beginning of the next word, past any spaces"
+   (interactive "d")
+   (forward-word)
+   (forward-word)
+   (backward-word))
+(global-set-key "\M-f" 'next-word)
+
 ;; remap backward kill to C-w
 (global-set-key "\C-w" 'backward-kill-word)
 ;; remap kill region to \C-W
