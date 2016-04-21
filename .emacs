@@ -397,8 +397,9 @@ point reaches the beginning or end of the buffer, stop there."
 ;; (setq powerline-arrow-shape 'arrow)   ;; the default
 ;; (setq powerline-arrow-shape 'arrow14) ;; best for small fonts
 (custom-set-faces
- '(mode-line ((t (:foreground "#fff" :background "#2f073c" :box nil))))
+ '(mode-line ((t (:foreground "#fff" :background "#0d301c" :box nil))))
  '(mode-line-inactive ((t (:foreground "#fff" :background "#295a54" :box nil)))))
 
-(setq powerline-color1 "#0d301c")   ;; dark-green
+
+(setq powerline-color1 "#2f073c")   ;; dark-green
 (setq powerline-color2 "#090c18")   ;; = background color
