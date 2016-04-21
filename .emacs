@@ -401,7 +401,7 @@ point reaches the beginning or end of the buffer, stop there."
 ;; (setq powerline-arrow-shape 'arrow14) ;; best for small fonts
 (custom-set-faces
  '(mode-line ((t (:foreground "#fff" :background "#0d301c" :box nil))))
- '(mode-line-inactive ((t (:foreground "#fff" :background "#295a54" :box nil)))))
+ '(mode-line-inactive ((t (:foreground "#fff" :background "#0d301c" :box nil)))))
 
 
 (setq powerline-color1 "#2f073c")   ;; dark-green
